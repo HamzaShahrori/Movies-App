@@ -1,0 +1,16 @@
+.container{
+    text-align: center;
+    background-color:wheat;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 2em;
+}
+
+.numPage{
+    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
