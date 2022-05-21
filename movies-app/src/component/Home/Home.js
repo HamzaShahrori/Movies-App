@@ -37,7 +37,7 @@ const Home = () => {
         {movies &&
           movies.map((element, i) => (
             <div key={i}>
-              <img
+              <img className="movieImg"
                 src={`https://image.tmdb.org/t/p/w500${element.backdrop_path}`}
              onClick ={()=>{
                 convertToMovie(element.id)
