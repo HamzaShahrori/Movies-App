@@ -38,6 +38,7 @@ console.log(id);
     
     <h3>{movie.title}</h3>
     <p>{movie.overview}</p>
+    <p>Publish :{movie.release_date}</p>
      </div>
   </div></>):(<></>)}
 
