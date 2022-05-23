@@ -1,0 +1,27 @@
+.containerFavorite{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.containerFavoriteMovie{
+  display: grid;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+
+}
+
+.movieImg{
+    border-radius: 5%;
+}
+
+.ImHeartBroken{
+    font-size:  30px;
+    margin-left: 48%;
+    cursor: pointer;
+    color:  rgb(223, 24, 24);
+
+}
