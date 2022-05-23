@@ -1,4 +1,26 @@
 .containerMovie{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.MdFavoriteBorder{
+ font-size: 2rem;
+ cursor: pointer;
+ color: rgb(223, 24, 24);
+}
+
+.MdFavorite{
+    font-size: 2rem;
+ cursor: pointer;
+ color: rgb(223, 24, 24);
+}
+
+.imgMovie{
+    border-radius: 5%;
 }
