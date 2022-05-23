@@ -1,0 +1,45 @@
+.containerNavBar{
+ 
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.menu{
+    background: #fff;
+    display: flex;
+   width: 100%;
+   column-gap: 85%;
+    box-shadow: 0 10px 10px 0px  rgba(0,0,0,0.1) ;
+    overflow: hidden;
+}
+.menu div{
+    padding: 20px  50px;
+    font-size:30px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.5s;
+   
+}
+
+.menu div span{
+   position: absolute;
+   color: #ff5361;
+  
+   padding: 20px  50px;
+   left: 0;
+   top: 100%;
+   border-bottom: 5px solid #ff5361;
+    
+}
+
+
+
+
+.menu div:hover{
+    transform: translateY(-100%);
+
+}
