@@ -1,20 +1,32 @@
 .container{
+    margin-top: 2%;
     text-align: center;
-    background-color:wheat;
+    
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    column-gap: 2em;
+ 
+    width: 100%;
 }
 
 .numPage{
+  
     width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: .3%;
 }
 
 
 
 .movieImg{
+   
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.numPage button{
+    width: 5%;
+    height: 6%;
     cursor: pointer;
 }
