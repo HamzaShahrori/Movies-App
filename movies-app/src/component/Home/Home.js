@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [movies, setMovies] = useState();
-  const [numPage,setNumPage]=useState(1)
+  const [numPage, setNumPage] = useState(1);
 
   const navigate = useNavigate();
   const getAllMovies = async () => {
@@ -22,7 +22,6 @@ const Home = () => {
       setMovies(result.data.results);
     } catch {}
   };
-
 
   const convertToMovie = (id) => {
     navigate(`/movie/${id}`);
@@ -37,11 +36,13 @@ const Home = () => {
         {movies &&
           movies.map((element, i) => (
             <div key={i}>
-              <img className="movieImg"
+              <img
+                className="movieImg"
                 src={`https://image.tmdb.org/t/p/w500${element.backdrop_path}`}
-             onClick ={()=>{
-                convertToMovie(element.id)
-             }}/>
+                onClick={() => {
+                  convertToMovie(element.id);
+                }}
+              />
               <p>{element.original_title}</p>
               <p>
                 <MdLanguage /> {element.original_language}
@@ -53,18 +54,28 @@ const Home = () => {
             </div>
           ))}{" "}
       </div>{" "}
-
-
       <div className="numPage">
-          {numPage>1?(<button onClick={()=>{
-            setNumPage(numPage-1)
-          }}>Back</button>):(<></>)} 
-          
-          <button onClick={()=>{
-            setNumPage(numPage+1)
-          }} className="btn">Next</button>
-          
-          </div>
+        {numPage > 1 ? (
+          <button
+            onClick={() => {
+              setNumPage(numPage - 1);
+            }}
+          >
+            Back
+          </button>
+        ) : (
+          <></>
+        )}
+
+        <button
+          onClick={() => {
+            setNumPage(numPage + 1);
+          }}
+          className="btn"
+        >
+          Next
+        </button>
+      </div>
     </>
   );
 };
